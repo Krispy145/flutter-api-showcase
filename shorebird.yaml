@@ -1,0 +1,6 @@
+app_id: "com.krispy.api_showcase"
+flavors:
+  dev:
+    app_id: "com.krispy.api_showcase.dev"
+  prod:
+    app_id: "com.krispy.api_showcase"
