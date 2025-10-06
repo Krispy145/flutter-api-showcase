@@ -129,11 +129,3 @@ flutter test --coverage
 ## 📄 License
 
 MIT © Krispy145
-
----
-
-✅ This updated version:
-
-- Adds your roadmap-style consistency.
-- Highlights your professional journey and structure.
-- Ties it into your AI + cybersecurity skill-building path.
