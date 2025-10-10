@@ -1,13 +1,6 @@
 # API Showcase
 
-A Flutter media browser built to demonstrate how I design **production-grade API clients** with modern architecture, state management, caching, and CI/CD.
-
-This project complements my **AI Chat (RAG)** repo by showing a different domain and stack:
-
-- **AI Chat (RAG)** → AI + streaming (Riverpod)
-- **API Showcase** → API integration + pagination + BLoC
-
-Together, they highlight my **range and versatility in Flutter**, both frontend and backend-aligned.
+Flutter API client patterns: BLoC, Dio, pagination, caching (Pexels demo).
 
 ---
 
