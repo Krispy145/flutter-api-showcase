@@ -109,13 +109,13 @@ flutter test --coverage
 
 ## 🗓 Roadmap
 
-| Milestone                    | Target Date | Status     |
-| ---------------------------- | ----------- | ---------- |
-| Scaffold repo                | 06/10/2025  | ✅ Done    |
-| Pexels API integration       | 10/10/2025  | ⏳ Pending |
-| Offline caching + pagination | 14/10/2025  | ⏳ Planned |
-| Secure AI API integration    | 20/10/2025  | ⏳ Planned |
-| Flutter IAM integration      | 27/10/2025  | ⏳ Planned |
+| Milestone                    | Category              | Target Date | Status     |
+| ---------------------------- | --------------------- | ----------- | ---------- |
+| Scaffold repo                | Flutter App & Packages | 06/10/2025  | ✅ Done    |
+| Pexels API integration       | Flutter App & Packages | 10/10/2025  | ⏳ Pending |
+| Offline caching + pagination | Flutter App & Packages | 14/10/2025  | ⏳ Planned |
+| Secure AI API integration    | Flutter App & Packages | 20/10/2025  | ⏳ Planned |
+| Flutter IAM integration      | Flutter App & Packages | 27/10/2025  | ⏳ Planned |
 
 ---
 
