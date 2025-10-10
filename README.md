@@ -109,8 +109,8 @@ flutter test --coverage
 
 ## 🗓 Roadmap
 
-| Milestone                    | Category              | Target Date | Status     |
-| ---------------------------- | --------------------- | ----------- | ---------- |
+| Milestone                    | Category               | Target Date | Status     |
+| ---------------------------- | ---------------------- | ----------- | ---------- |
 | Scaffold repo                | Flutter App & Packages | 06/10/2025  | ✅ Done    |
 | Pexels API integration       | Flutter App & Packages | 10/10/2025  | ⏳ Pending |
 | Offline caching + pagination | Flutter App & Packages | 14/10/2025  | ⏳ Planned |
