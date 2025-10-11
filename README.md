@@ -1,86 +1,77 @@
-# API Showcase
+# Flutter Api Showcase
 
-Flutter API client patterns: BLoC, Dio, pagination, caching (Pexels demo).
+Flutter API client patterns: BLoC, Dio, pagination, caching; integrates flutter-iam-package.
 
 ---
 
 ## 📈 Status
 
-- **Status:** scaffolded (initial setup complete)
-- **Focus:** Flutter architecture, data flow, caching, and secure API patterns
-- **Last updated:** 06/10/2025
-- **Upcoming integration:** Secure AI API (as backend source)
+- **Status:** planned (Planned)
+- **Focus:** Flutter API client patterns: BLoC, Dio, pagination, caching; integrates flutter-iam-package.
+- **Last updated:** 11/10/2025
+- **Target completion:** 27/10/2025
 
 ---
 
 ## 🔑 Highlights
 
-- **Media Browser:** Image & video search using the [Pexels API](https://www.pexels.com/api/)
-- **State Management:** BLoC + Cubit for predictable state flows
-- **Navigation:** Auto Route for typed navigation
-- **Dependency Injection:** GetIt with flavor-based graph setup
-- **Data Models:** dart_mappable for typed DTOs/entities
-- **Networking:** Dio with interceptors (auth, retries, logging)
-- **Offline-first:** Hive caching with stale data fallback
-- **Pagination:** Infinite scroll + pull-to-refresh
-- **CI/CD:** GitHub Actions + Shorebird-ready OTA updates
-- **Flavors:** Dev/Prod builds via `--dart-define`
+- **Cross-platform** → Android, iOS, Web support
+- **State Management** → Riverpod/GetIt for reactive updates
+- **Dependency Injection** → Clean architecture with GetIt
+- **Type Safety** → dart_mappable for data modeling
+- **Networking** → Dio with interceptors and error handling
+- **CI/CD** → GitHub Actions + Shorebird OTA updates
+- **Testing** → Unit, widget, and golden tests
 
 ---
 
 ## 🏗 Architecture Overview
 
-Feature-first architecture with clean separation of concerns:
-
 ```
 lib/
- ├─ core/            # env, di, error, networking, utils
- ├─ data/            # dto, entities, sources, repositories
- ├─ features/media/  # bloc, pages, widgets
- └─ presentation/    # app shell, router, theme
+ ├─ core/           # DI, error handling, networking
+ ├─ data/           # DTOs, entities, sources, repositories
+ ├─ features/       # feature modules (providers, pages, widgets)
+ └─ presentation/   # app shell, router, theme
 ```
 
 **Patterns used:**
 
-- `Repository` combines remote & cache sources
-- `Source` layer uses Dio for API + Hive for persistence
-- `BLoC` drives all UI events → states
-- `auto_route` for navigation
-- `dart_mappable` for codegen DTOs
+- **Repository pattern** → clean separation between UI and data
+- **Riverpod/GetIt** → reactive state management and dependency injection
+- **dart_mappable** → type-safe data modeling
+- **Dio** → HTTP client with interceptors and error handling
 
 ---
 
 ## 📱 What It Demonstrates
 
-- Clean & modular Flutter API integration
-- Offline-first and paginated list patterns
-- Type-safe navigation and dependency graph setup
-- Reusable architecture suitable for production-scale apps
+- Cross-platform mobile app development with Flutter
+- Clean architecture patterns and state management
+- API integration and data persistence
+- Modern Flutter development practices and tooling
 
 ---
 
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/Krispy145/api_showcase.git
-cd api_showcase
+git clone https://github.com/Krispy145/flutter-api-showcase.git
+cd flutter-api-showcase
 flutter pub get
 ```
 
-**Run (Dev flavor):**
-
+**Run (Dev):**
 ```bash
-flutter run -t lib/main_dev.dart --flavor dev --dart-define=PEXELS_API_KEY=your-key
+flutter run --flavor dev
 ```
 
-**Run (Prod flavor):**
-
+**Run (Prod):**
 ```bash
-flutter run -t lib/main_prod.dart --flavor prod --dart-define=PEXELS_API_KEY=your-key
+flutter run --flavor prod
 ```
 
 **Codegen:**
-
 ```bash
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
@@ -93,29 +84,30 @@ flutter pub run build_runner build --delete-conflicting-outputs
 flutter test --coverage
 ```
 
-- Unit tests → Repositories, API mapping
-- Widget tests → Search + pagination
-- Golden tests → Grid layout + error states
+- Unit → repositories, services
+- Widget → UI components and interactions
+- Golden → visual regression tests
 
 ---
 
 ## 🔒 Security & Next Steps
 
-- Follow secure API client patterns (no keys hard-coded, safe caching)
-- Integrate with **Secure AI API** backend to demonstrate token-based access
-- Add **Auth Interceptor** integration with `flutter_iam` package
+- Follow security best practices for the technology stack
+- Implement proper authentication and authorization
+- Add comprehensive error handling and validation
+- Set up monitoring and logging
 
 ---
 
 ## 🗓 Roadmap
 
-| Milestone                    | Category               | Target Date | Status     |
-| ---------------------------- | ---------------------- | ----------- | ---------- |
-| Scaffold repo                | Flutter App & Packages | 06/10/2025  | ✅ Done    |
-| Pexels API integration       | Flutter App & Packages | 10/10/2025  | ⏳ Pending |
-| Offline caching + pagination | Flutter App & Packages | 14/10/2025  | ⏳ Planned |
-| Secure AI API integration    | Flutter App & Packages | 20/10/2025  | ⏳ Planned |
-| Flutter IAM integration      | Flutter App & Packages | 27/10/2025  | ⏳ Planned |
+| Milestone                    | Category              | Target Date | Status     |
+| ---------------------------- | --------------------- | ----------- | ---------- |
+| Pexels/API patterns setup | Flutter App & Packages | 20/10/2025 | ⏳ In Progress |
+| Offline caching + pagination | Flutter App & Packages | 24/10/2025 | ⏳ In Progress |
+| Secure AI API integration | Flutter App & Packages | 27/10/2025 | ⏳ In Progress |
+| Flutter IAM integration | Flutter App & Packages | 31/10/2025 | ⏳ In Progress |
+
 
 ---
 
