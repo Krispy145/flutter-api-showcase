@@ -6,10 +6,10 @@ Flutter API client patterns: BLoC, Dio, pagination, caching; integrates flutter-
 
 ## 📈 Status
 
-- **Status:** planned (Planned)
+- **Status:** scaffolded (Scaffolded)
 - **Focus:** Flutter API client patterns: BLoC, Dio, pagination, caching; integrates flutter-iam-package.
 - **Last updated:** 13/10/2025
-- **Target completion:** 27/10/2025
+- **Target completion:** 26/10/2025
 
 ---
 
