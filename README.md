@@ -8,8 +8,8 @@ Flutter API client patterns: BLoC, Dio, pagination, caching; integrates flutter-
 
 - **Status:** scaffolded (Scaffolded)
 - **Focus:** Flutter API client patterns: BLoC, Dio, pagination, caching; integrates flutter-iam-package.
-- **Last updated:** 13/10/2025
-- **Target completion:** 26/10/2025
+- **Last updated:** 11/11/2025
+- **Target completion:** 18/11/2025
 
 ---
 
@@ -103,10 +103,10 @@ flutter test --coverage
 
 | Milestone                    | Category              | Target Date | Status     |
 | ---------------------------- | --------------------- | ----------- | ---------- |
-| Pexels/API patterns setup | Flutter App & Packages | 20/10/2025 | ⏳ In Progress |
-| Offline caching + pagination | Flutter App & Packages | 24/10/2025 | ⏳ In Progress |
-| Secure AI API integration | Flutter App & Packages | 27/10/2025 | ⏳ In Progress |
-| Flutter IAM integration | Flutter App & Packages | 31/10/2025 | ⏳ In Progress |
+| Pexels/API patterns setup | Flutter App & Packages | 18/11/2025 | ⏳ In Progress |
+| Offline caching + pagination | Flutter App & Packages | 22/11/2025 | ⏳ In Progress |
+| Secure AI API integration | Flutter App & Packages | 25/11/2025 | ⏳ In Progress |
+| Flutter IAM integration | Flutter App & Packages | 29/11/2025 | ⏳ In Progress |
 
 
 ---
