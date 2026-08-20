@@ -11,7 +11,7 @@ part of 'app_router.dart';
 
 abstract class _$AppRouter extends RootStackRouter {
   // ignore: unused_element
-  _$AppRouter({super.navigatorKey});
+  _$AppRouter();
 
   @override
   final Map<String, PageFactory> pagesMap = {
@@ -19,17 +19,12 @@ abstract class _$AppRouter extends RootStackRouter {
       final args = routeData.argsAs<MediaDetailRouteArgs>();
       return AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: MediaDetailPage(
-          key: args.key,
-          item: args.item,
-        ),
+        child: MediaDetailPage(key: args.key, item: args.item),
       );
     },
     MediaListRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const MediaListPage(),
-      );
+          routeData: routeData, child: const MediaListPage());
     },
   };
 }
@@ -37,16 +32,11 @@ abstract class _$AppRouter extends RootStackRouter {
 /// generated route for
 /// [MediaDetailPage]
 class MediaDetailRoute extends PageRouteInfo<MediaDetailRouteArgs> {
-  MediaDetailRoute({
-    Key? key,
-    required MediaItem item,
-    List<PageRouteInfo>? children,
-  }) : super(
+  MediaDetailRoute(
+      {Key? key, required MediaItem item, List<PageRouteInfo>? children})
+      : super(
           MediaDetailRoute.name,
-          args: MediaDetailRouteArgs(
-            key: key,
-            item: item,
-          ),
+          args: MediaDetailRouteArgs(key: key, item: item),
           initialChildren: children,
         );
 
@@ -57,10 +47,7 @@ class MediaDetailRoute extends PageRouteInfo<MediaDetailRouteArgs> {
 }
 
 class MediaDetailRouteArgs {
-  const MediaDetailRouteArgs({
-    this.key,
-    required this.item,
-  });
+  const MediaDetailRouteArgs({this.key, required this.item});
 
   final Key? key;
 
@@ -76,10 +63,7 @@ class MediaDetailRouteArgs {
 /// [MediaListPage]
 class MediaListRoute extends PageRouteInfo<void> {
   const MediaListRoute({List<PageRouteInfo>? children})
-      : super(
-          MediaListRoute.name,
-          initialChildren: children,
-        );
+      : super(MediaListRoute.name, initialChildren: children);
 
   static const String name = 'MediaListRoute';
 
